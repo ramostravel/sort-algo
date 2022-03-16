@@ -1,0 +1,17 @@
+PROCEDURE insertion-sort
+VAR
+    i , j , t: INTEGER ;
+BEGIN
+//current position and element
+		//current_position = i
+		//current_element = arr[i]
+    (FOR i FROM 1 TO arr.length-1 STEP step 1  DO)
+        t := arr [i]
+        j := i - 1 ;
+        WHILE (j >= 0 AND arr[j] > t) DO
+            arr[j+1] := arr[j] ;
+            j:= j-1 ;
+        END_WHILE
+        arr[j+1] = t ;
+    END_FOR
+END
